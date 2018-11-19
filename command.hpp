@@ -23,6 +23,7 @@ private:
 command::command() {}   // ctor
 command::~command() {}  // dtor
 
+// output looks like "debug=[0]" if debug is false.
 void command::toggle_debug() {
 	m_debug = !m_debug;
 	std::cout << "debug = [" << m_debug << "]" << std::endl;

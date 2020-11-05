@@ -13,7 +13,7 @@ public:
     command();
     virtual ~command();
 	
-	void toggle_debug();	// toggles the state of m_debug
+    void toggle_debug();	// toggles the state of m_debug
     void exec(const char *cmd, std::vector<std::string> &terminal_output, std::vector<std::string> &error_list);
 
 private:
